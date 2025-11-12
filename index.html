@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>📊 Telco Customer Churn Prediction</title>
+
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #00b4db, #ff6f61);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0;
+        }
+        .container {
+            background: #fff;
+            padding: 30px 40px;
+            border-radius: 20px;
+            width: 90%;
+            max-width: 900px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            overflow-y: auto;
+            max-height: 90vh;
+        }
+        h1 {
+            text-align: center;
+            color: #ff6f61;
+        }
+        form {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px 30px;
+        }
+        label {
+            font-weight: 600;
+        }
+        input {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+        }
+        button {
+            grid-column: span 2;
+            padding: 12px;
+            background: linear-gradient(90deg, #ff6f61, #ff8c42);
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+        button:hover {
+            background: linear-gradient(90deg, #ff8c42, #ff6f61);
+        }
+        .result {
+            grid-column: span 2;
+            text-align: center;
+            margin-top: 15px;
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>📊 Telco Customer Churn Prediction</h1>
+        <form action="/predict" method="post">
+            {% for feature in [
+                "SeniorCitizen","tenure","MonthlyCharges","TotalCharges",
+                "gender_Male","Partner_Yes","Dependents_Yes","PhoneService_Yes",
+                "MultipleLines_Yes","InternetService_DSL","InternetService_Fiber optic",
+                "OnlineSecurity_Yes","OnlineBackup_Yes","DeviceProtection_Yes",
+                "TechSupport_Yes","StreamingTV_Yes","StreamingMovies_Yes",
+                "Contract_One year","Contract_Two year","PaperlessBilling_Yes",
+                "PaymentMethod_Bank transfer (automatic)",
+                "PaymentMethod_Credit card (automatic)",
+                "PaymentMethod_Electronic check","PaymentMethod_Mailed check",
+                "SeniorCitizen_Yes","gender_Female","Partner_No","Dependents_No",
+                "MultipleLines_No","TechSupport_No"
+            ] %}
+            <label for="{{ feature }}">{{ feature.replace('_', ' ') }}</label>
+            <input type="number" step="0.01" name="{{ feature }}" required>
+            {% endfor %}
+            <button type="submit">Predict Churn</button>
+
+            {% if prediction_text %}
+            <div class="result">{{ prediction_text }}</div>
+            {% endif %}
+        </form>
+    </div>
+</body>
+</html>
+

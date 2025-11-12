@@ -1,0 +1,138 @@
+2025-11-07 11:34:37,822 | INFO | Loading data...
+2025-11-07 11:34:37,858 | INFO | \u2705 Data loaded successfully : (7043, 21)
+2025-11-07 11:34:37,865 | INFO | \u2705 Train/Test Split done. Train shape: (5634, 19), Test shape: (1409, 19)
+2025-11-07 11:34:37,865 | INFO | Handling missing values...
+2025-11-07 11:34:37,901 | INFO | \u2705 Missing Value Handling Completed Successfully.
+2025-11-07 11:34:37,905 | INFO | Missing Values After Handling:
+gender              0
+SeniorCitizen       0
+Partner             0
+Dependents          0
+tenure              0
+PhoneService        0
+MultipleLines       0
+InternetService     0
+OnlineSecurity      0
+OnlineBackup        0
+DeviceProtection    0
+TechSupport         0
+StreamingTV         0
+StreamingMovies     0
+Contract            0
+PaperlessBilling    0
+PaymentMethod       0
+MonthlyCharges      0
+TotalCharges        0
+Churn               0
+dtype: int64
+2025-11-07 11:34:37,905 | INFO | Performing variable transformation...
+2025-11-07 11:34:37,908 | INFO | \u2705 Log Transformation completed successfully.
+2025-11-07 11:34:37,908 | INFO | \u2705 Variable transformation completed successfully.
+2025-11-07 11:34:37,908 | INFO | Handling outliers...
+2025-11-07 11:34:37,919 | INFO | \u2705 Outlier handling completed successfully using IQR method.
+2025-11-07 11:34:37,919 | INFO | \u2705 Outlier handling successfully completed.
+2025-11-07 11:34:37,919 | INFO | Creating visualizations...
+2025-11-07 11:34:48,720 | INFO | \u2705 Visualization completed successfully.
+2025-11-07 11:34:48,722 | INFO | Preprocessing data...
+2025-11-07 11:34:48,782 | INFO | \u2705 Encoding and scaling completed.
+2025-11-07 11:34:48,782 | INFO | Training models...
+2025-11-07 11:35:00,299 | INFO | \u2705 Best model: Logistic Regression (AUC = 0.845)
+2025-11-07 11:35:00,305 | INFO | Performing hyperparameter tuning for RandomForest...
+2025-11-07 11:35:14,816 | INFO | \u2705 Best Parameters: {'max_depth': 10, 'min_samples_split': 10, 'n_estimators': 200}
+2025-11-07 11:35:14,816 | INFO | \u2705 Best ROC-AUC: 0.8445
+2025-11-07 11:35:14,816 | INFO | Saving final model and related files...
+2025-11-07 11:35:15,570 | INFO | \u2705 Model saved as churn_model.pkl
+2025-11-07 11:35:15,572 | INFO | \u2705 Scaler saved as scaler.pkl
+2025-11-07 11:35:15,572 | INFO | \u2705 Feature names saved as features.json
+2025-11-07 12:39:32,170 | INFO | Loading data...
+2025-11-07 12:39:32,206 | INFO | \u2705 Data loaded successfully : (7043, 21)
+2025-11-07 12:39:32,239 | INFO | \u2705 Train/Test Split done. Train shape: (5634, 19), Test shape: (1409, 19)
+2025-11-07 12:39:32,239 | INFO | Handling missing values...
+2025-11-07 12:39:32,282 | INFO | \u2705 Missing Value Handling Completed Successfully.
+2025-11-07 12:39:32,290 | INFO | Missing Values After Handling:
+gender              0
+SeniorCitizen       0
+Partner             0
+Dependents          0
+tenure              0
+PhoneService        0
+MultipleLines       0
+InternetService     0
+OnlineSecurity      0
+OnlineBackup        0
+DeviceProtection    0
+TechSupport         0
+StreamingTV         0
+StreamingMovies     0
+Contract            0
+PaperlessBilling    0
+PaymentMethod       0
+MonthlyCharges      0
+TotalCharges        0
+Churn               0
+dtype: int64
+2025-11-07 12:39:32,290 | INFO | Performing variable transformation...
+2025-11-07 12:39:32,290 | INFO | \u2705 Log Transformation completed successfully.
+2025-11-07 12:39:32,290 | INFO | \u2705 Variable transformation completed successfully.
+2025-11-07 12:39:32,290 | INFO | Handling outliers...
+2025-11-07 12:39:32,304 | INFO | \u2705 Outlier handling completed successfully using IQR method.
+2025-11-07 12:39:32,311 | INFO | \u2705 Outlier handling successfully completed.
+2025-11-07 12:39:32,311 | INFO | Creating visualizations...
+2025-11-07 12:39:44,556 | INFO | \u2705 Visualization completed successfully.
+2025-11-07 12:39:44,557 | INFO | Preprocessing data...
+2025-11-07 12:39:44,620 | INFO | \u2705 Encoding and scaling completed.
+2025-11-07 12:39:44,620 | INFO | Training models...
+2025-11-07 12:39:58,021 | INFO | \u2705 Best model: Logistic Regression (AUC = 0.845)
+2025-11-07 12:39:58,025 | INFO | Performing hyperparameter tuning for RandomForest...
+2025-11-07 12:40:12,454 | INFO | \u2705 Best Parameters: {'max_depth': 10, 'min_samples_split': 10, 'n_estimators': 200}
+2025-11-07 12:40:12,454 | INFO | \u2705 Best ROC-AUC: 0.8445
+2025-11-07 12:40:12,454 | INFO | Saving final model and related files...
+2025-11-07 12:40:13,166 | INFO | \u2705 Model saved as churn_model.pkl
+2025-11-07 12:40:13,168 | INFO | \u2705 Scaler saved as scaler.pkl
+2025-11-07 12:40:13,170 | INFO | \u2705 Feature names saved as features.json
+2025-11-07 13:10:18,313 | INFO | Loading data...
+2025-11-07 13:10:18,329 | INFO | \u2705 Data loaded successfully : (7043, 21)
+2025-11-07 13:10:18,345 | INFO | \u2705 Train/Test Split done. Train shape: (5634, 19), Test shape: (1409, 19)
+2025-11-07 13:10:18,345 | INFO | Handling missing values...
+2025-11-07 13:10:18,361 | INFO | \u2705 Missing Value Handling Completed Successfully.
+2025-11-07 13:10:18,361 | INFO | Missing Values After Handling:
+gender              0
+SeniorCitizen       0
+Partner             0
+Dependents          0
+tenure              0
+PhoneService        0
+MultipleLines       0
+InternetService     0
+OnlineSecurity      0
+OnlineBackup        0
+DeviceProtection    0
+TechSupport         0
+StreamingTV         0
+StreamingMovies     0
+Contract            0
+PaperlessBilling    0
+PaymentMethod       0
+MonthlyCharges      0
+TotalCharges        0
+Churn               0
+dtype: int64
+2025-11-07 13:10:18,361 | INFO | Performing variable transformation...
+2025-11-07 13:10:18,361 | INFO | \u2705 Log Transformation completed successfully.
+2025-11-07 13:10:18,361 | INFO | \u2705 Variable transformation completed successfully.
+2025-11-07 13:10:18,361 | INFO | Handling outliers...
+2025-11-07 13:10:18,377 | INFO | \u2705 Outlier handling completed successfully using IQR method.
+2025-11-07 13:10:18,377 | INFO | \u2705 Outlier handling successfully completed.
+2025-11-07 13:10:18,377 | INFO | Creating visualizations...
+2025-11-07 13:10:29,768 | INFO | \u2705 Visualization completed successfully.
+2025-11-07 13:10:29,768 | INFO | Preprocessing data...
+2025-11-07 13:10:29,805 | INFO | \u2705 Encoding and scaling completed.
+2025-11-07 13:10:29,805 | INFO | Training models...
+2025-11-07 13:10:41,837 | INFO | \u2705 Best model: Logistic Regression (AUC = 0.845)
+2025-11-07 13:10:41,837 | INFO | Performing hyperparameter tuning for RandomForest...
+2025-11-07 13:11:04,885 | INFO | \u2705 Best Parameters: {'max_depth': 10, 'min_samples_split': 10, 'n_estimators': 200}
+2025-11-07 13:11:04,885 | INFO | \u2705 Best ROC-AUC: 0.8445
+2025-11-07 13:11:04,885 | INFO | Saving final model and related files...
+2025-11-07 13:11:07,103 | INFO | \u2705 Model saved as churn_model.pkl
+2025-11-07 13:11:07,103 | INFO | \u2705 Scaler saved as scaler.pkl
+2025-11-07 13:11:07,107 | INFO | \u2705 Feature names saved as features.json
